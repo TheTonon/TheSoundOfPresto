@@ -5,13 +5,60 @@
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
+  <h2>The great Presto soundboard</h2>
   <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
+      Saporra is being made on my weekend, that shows the falência of my spirit
   </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+  <ion-row responsive-sm>
+      <ion-col>
+          <audio id="ameno">
+              <source src="https://www.myinstants.com/media/sounds/ameno.mp3" type="audio/mp3">
+          </audio>
+          <button ion-button (click)="playStream('ameno')" type="submit" expand="block">
+              Play Ameno
+          </button>
+      </ion-col>
+      <ion-col>
+          <audio id="passinho_do_ameno">
+              <source src="https://www.myinstants.com/media/sounds/passinho-do-ameno-dori-me-funk-ameno-online-audio-converter.mp3" type="audio/mp3">
+          </audio>
+          <button ion-button (click)="playStream('passinho_do_ameno')" type="submit" expand="block">
+              Play Passinho do Ameno
+          </button>
+      </ion-col>
+      <ion-col>
+          <audio id="dorime">
+              <source src="https://www.myinstants.com/media/sounds/torime.mp3" type="audio/mp3">
+          </audio>
+          <button ion-button (click)="playStream('dorime')" type="submit" expand="block">
+              Play Dorime
+          </button>
+      </ion-col>
+  </ion-row>
+  <ion-row responsive-ms>
+      <ion-col>
+          <audio id="work-work">
+              <source src="https://www.myinstants.com/media/sounds/wc3-peon-says-work-work-only-.mp3" type="audio/mp3">
+          </audio>
+          <button ion-button (click)="playStream('work-work')" type="submit" expand="block">
+              Play Work Work
+          </button>
+      </ion-col>
+      <ion-col>
+          <audio id="linha4">
+              <source src="https://www.myinstants.com/media/sounds/my-movie-8.mp3" type="audio/mp3">
+          </audio>
+          <button ion-button (click)="playStream('linha4')" type="submit" expand="block">
+              Play Linha 4
+          </button>
+      </ion-col>
+      <ion-col>
+          <audio id="narutoTriste">
+              <source src="https://www.myinstants.com/media/sounds/naruto-funk-mandando-aquele-versao-triste-1.mp3" type="audio/mp3">
+          </audio>
+          <button ion-button (click)="playStream('narutoTriste')" type="submit"x expand="block">
+              Play Naruto Triste
+          </button>
+      </ion-col>
+  </ion-row>
 </ion-content>
